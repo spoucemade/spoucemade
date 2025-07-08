@@ -477,7 +477,7 @@
         // Add artificial delay for better UX
         await new Promise(resolve => setTimeout(resolve, 800));
         
-        const response = await fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vS-gisEPiKNiapF8acjNCZSJtK-8CSWQkEa_F9hFnegNrtTeEc8sTPtDnOCWm9w8MpvdE9VLXlEutMH/pub?gid=0&single=true&output=csv");
+        const response = await fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9byICyOrXL-UFHrLO-jRSyBCDS03HKJy_3DOAte8jEXtLBCIigSocRvt5V67DK7XqTaiQ1DoZ-07j/pub?gid=0&single=true&output=csv");
         const csvText = await response.text();
         
         const rows = csvText.split('\n').map(row => row.split(','));
